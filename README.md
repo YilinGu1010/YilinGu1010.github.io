@@ -1,12 +1,56 @@
-##About The Project
+# About The Project
 
-There are plenty of great README templates on GitHub, but none of them quite fit what I was looking for, so I decided to create this improved version. My goal is to design a README template so exceptional that it'll be the only one you'll ever need — and I believe this is it.
+This task is to classify the echoes in leads and sea ice and produce an average echo shape as well as standard deviation for these two classes, Quantify the echo classification against the ESA official classification using a confusion matrix
 
-Here's why:
+The tasks in this notebook will be mainly two:
 
-Your time should be focused on creating something amazing. A project that solves a problem and helps others
-You shouldn't be doing the same tasks over and over like creating a README from scratch
-You should implement DRY principles to the rest of your life 😄
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Discrimination of Sea ice and lead based on image classification based on Sentinel-2 optical data.
 
-Use the BLANK_README.md to get started.
+Discrimination of Sea ice and lead based on altimetry data classification based on Sentinel-3 altimetry data.
+
+## Installation
+
+Below is an example of how you can get the files.
+
+1. Download and register Google Colab at https://colab.research.google.com
+2. Select the required file and download it.
+3. Open the file and run it.
+
+## Running Tests
+
+To run tests, run the following command
+
+for example, mount the file with google drive
+
+```bash
+from google.colab import drive
+drive.mount('/content/drive')
+```
+
+Plotting the plots
+```bash
+plt.imshow(labels_image, cmap='viridis')
+plt.title('GMM clustering on Sentinel-2 Bands')
+plt.colorbar(label='Cluster Label')
+plt.show()
+```
+
+## Roadmap
+
+- K-means
+- Gaussian Mixture Models (GMM)
+- Image Classification
+- Altimetry Classification
+- Some definitions from official ESA document
+
+## Authors
+
+- name: zcfbgub@ucl.ac.uk
+- project link: https://colab.research.google.com/drive/1s0jydI2O0YFtUHJ74zLpwWp-OMY0bV-E#scrollTo=oDpD-emQs4wr
+
+## Acknowledgements
+
+- [GitHub Pages](https://pages.github.com)
+- [Google Colab](https://colab.research.google.com)
+
+
